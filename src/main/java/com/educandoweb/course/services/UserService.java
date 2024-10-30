@@ -41,7 +41,7 @@ public class UserService {
 		catch (EmptyResultDataAccessException e) {
 			throw new ResourceNotFoundException(id);
 		}
-		catch(DataIntegrityViolationException e) {
+		catch (DataIntegrityViolationException e) {
 			throw new DatabaseException(e.getMessage());
 		}
 	}
